@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin" 
+    android:weightSum="100"
+    >
+
+    <TextView
+        android:id="@+id/dynamicStockSymbolTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MSFT"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/stoc_list_text_size"
+        android:textIsSelectable="true"
+        android:layout_weight="50" />
+
+    <TextView
+        android:id="@+id/dynamicStockCompanyTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="44"
+        android:textColor="@android:color/white"
+        android:text="(Microsoft Corp)" />
+
+    <Button
+        android:id="@+id/stockQuoteButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:text="@string/get_stock_quote"
+        android:layout_marginRight="5dp"
+        android:textColor="@android:color/white"
+        android:layout_weight="3"
+        android:background="@drawable/backgroundedittext" />
+
+    <Button
+        android:id="@+id/quoteStockFromWebButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:text="@string/go_to_website"
+        android:textColor="@android:color/white"
+        android:layout_weight="3"
+        android:background="@drawable/backgroundedittext" />
+
+</TableRow>

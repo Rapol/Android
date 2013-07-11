@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <SwitchPreference android:key="picture_toggle" android:title="Picture" android:summary="Toggles picture of stock" android:enabled="true"/>
+    <ListPreference android:entries="@array/size_pic_array" android:entryValues="@array/size_pic_array" android:summary="@string/picture_size_summary" android:title="@string/picture_size_title" android:key="picture_size_prefs"/>
+    
+
+</PreferenceScreen>

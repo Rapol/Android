@@ -1,0 +1,118 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StockActivity"
+    android:background="@color/black" >
+
+    <LinearLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/enterSymbolTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stock_symbol"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+              />
+
+        <EditText
+            android:id="@+id/stockSymboET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/backgroundedittext"
+            android:textColor="@android:color/white" 
+            android:inputType="textNoSuggestions"
+            android:imeOptions="actionDone"
+          >
+           <!--this says the edit text will take the 
+            remaining space taken by the TV and button-->
+        </EditText>
+
+        <Button
+            android:id="@+id/entetStockSymbolButton"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:text="@string/enter_stock_symbol"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/backgroundedittext"
+            android:textColor="@android:color/white"
+             />
+    </LinearLayout>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <TextView
+            android:id="@+id/stockSymbolTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/stock_symbol_list"
+            android:textSize="@dimen/stoc_list_text_size"
+            android:textColor="@android:color/white"  />
+        <!-- span=how many columns -->
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/backgroundedittext" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp" >
+
+            <TableLayout
+                android:id="@+id/StockScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:stretchColumns="yes" >
+            </TableLayout>
+        </ScrollView>
+    </TableRow>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+         >
+
+        <Button
+            android:id="@+id/deleteSymbolsButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/delete_all_symbols"
+            android:layout_weight="1"
+            android:background="@drawable/backgroundedittext"
+            android:textColor="@android:color/white" 
+             />
+
+    </TableLayout>
+
+</TableLayout>

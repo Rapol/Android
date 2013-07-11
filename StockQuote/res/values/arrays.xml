@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="size_pic_array">
+        <item >&quot;Small&quot;</item>
+        <item >&quot;Medium&quot;</item>
+        <item >&quot;Large&quot;</item>
+        <item >&quot;Standard&quot;</item>
+    </string-array>
+    
+</resources>
